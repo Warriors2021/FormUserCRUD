@@ -5,10 +5,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Datos de conexión a la base de datos
-host = os.getenv("HOST_DB")
-usuario = os.getenv("USUARIO_DB")
-password = os.getenv("PASSWORD_DB")
-bd = os.getenv("DB")
+host = os.getenv("DATABASE_HOST")
+usuario = os.getenv("DATABASE_USER")
+password = os.getenv("DATABASE_PASSWORD")
+bd = os.getenv("DATABASE_NAME")
 
 
 def conecction_mysql():
